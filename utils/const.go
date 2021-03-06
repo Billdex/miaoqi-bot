@@ -1,4 +1,4 @@
-package util
+package utils
 
 const (
 	OneBotStatusOK         = 200
@@ -81,4 +81,4 @@ const (
 	PermissionDeniedNote = "我不听我不听我不听!"
 )
 
-var PrefixCharacters = []string{"#", "＃"}
+var PrefixCharacters = []string{"*"}

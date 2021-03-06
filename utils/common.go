@@ -1,4 +1,4 @@
-package util
+package utils
 
 import (
 	"fmt"
@@ -47,4 +47,16 @@ func HasPrefixIn(s string, prefix ...string) bool {
 		}
 	}
 	return false
+}
+
+func LimitNumberSection(n, start, end int) int {
+	if start > end {
+		start, end = end, start
+	}
+	if n < start {
+		n = start
+	} else if n > end {
+		n = end
+	}
+	return n
 }
